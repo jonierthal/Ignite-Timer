@@ -2,6 +2,7 @@ import { Button } from "./Components/Button";
 import { ThemeProvider } from "styled-components";
 
 import { defaulTheme } from "./styles/themes/default";
+import { GlobalStyle } from "./styles/global";
 
 export function App() {
 
@@ -11,6 +12,9 @@ export function App() {
       <Button variant="secondary"/>
       <Button variant="success"/>
       <Button variant="danger"/>
+
+      <GlobalStyle/>
+      asdf
     </ThemeProvider>
   )
 }
