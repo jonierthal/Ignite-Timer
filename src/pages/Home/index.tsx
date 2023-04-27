@@ -66,7 +66,7 @@ export function Home() {
           setCycles((state) =>
             state.map((cycle) => {
               if (cycle.id === activeCycleId) {
-                return {...cycle, finishedDate: new Date() }
+                return { ...cycle, finishedDate: new Date() }
               } else {
                 return cycle
               }
@@ -104,7 +104,7 @@ export function Home() {
     reset()
   }
 
-  function handleInterruptCycle(){
+  function handleInterruptCycle() {
     setCycles((state) =>
       state.map((cycle) => {
         if (cycle.id === activeCycleId) {
@@ -135,7 +135,7 @@ export function Home() {
   const isSubmitDisabled = !task
 
   console.log(cycles)
-  
+
   return (
     <HomeContainer>
       <form onSubmit={handleSubmit(handleCreateNewCycle)} action="">
